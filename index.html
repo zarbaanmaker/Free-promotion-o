@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Advanced SEO Meta Tags -->
+    <title>Global Showcase Hub | Free App & Website Promotion Directory</title>
+    <meta name="title" content="Global Showcase Hub | Free App & Website Promotion Directory">
+    <meta name="description" content="Submit and promote your apps, games, tools, and websites for free. Gain exposure, get high-quality backlinks, and reach thousands of users worldwide on Global Showcase Hub.">
+    <meta name="keywords" content="free website promotion, promote app free, startup directory, submit project free, free backlink directory, indie hacker showcase, software directory">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="ZAR KING">
+
+    <!-- Open Graph / Facebook / WhatsApp SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zar-king.github.io/">
+    <meta property="og:title" content="Global Showcase Hub | Free App & Website Promotion Directory">
+    <meta property="og:description" content="Promote your projects for free. Get immediate visibility, backlinks, and user feedback on our showcase platform.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200">
+
+    <!-- Twitter Card SEO -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zar-king.github.io/">
+    <meta property="twitter:title" content="Global Showcase Hub | Free App & Website Promotion">
+    <meta property="twitter:description" content="Submit your app, tool, or site for free global promotion.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200">
+
+    <!-- Google Structured Data (JSON-LD) for High Ranking -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Global Showcase Hub",
+      "url": "https://zar-king.github.io/",
+      "description": "Free platform to submit, promote, and discover websites, mobile apps, and tools.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://zar-king.github.io/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-main: #000000;
+            --bg-card: #050b14;
+            --bg-input: #0a1120;
+            --primary-blue: #0055ff;
+            --accent-blue: #2563eb;
+            --hover-blue: #1d4ed8;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --border-color: #1e293b;
+            --glow: rgba(0, 85, 255, 0.25);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navbar Section */
+        header {
+            padding: 25px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--primary-blue);
+        }
+
+        .badge {
+            background: rgba(0, 85, 255, 0.15);
+            border: 1px solid var(--primary-blue);
+            color: #60a5fa;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Hero Header */
+        .hero {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            background: linear-gradient(180deg, #ffffff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 1.15rem;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* Layout Grid */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 850px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Form Card Styling */
+        .form-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 10px 30px var(--glow);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+
+        .form-card h2 {
+            font-size: 1.3rem;
+            margin-bottom: 18px;
+            color: #ffffff;
+            border-bottom: 2px solid var(--primary-blue);
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--bg-input);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 10px var(--glow);
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--accent-blue);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: var(--hover-blue);
+        }
+
+        /* Listing Grid Styling */
+        .showcase-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .showcase-header h2 {
+            font-size: 1.4rem;
+            color: #ffffff;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary-blue);
+        }
+
+        .card-img-wrapper {
+            width: 100%;
+            height: 150px;
+            background-color: #0d1527;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-category {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.75);
+            color: #60a5fa;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .card-content {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .card-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            flex-grow: 1;
+            line-height: 1.4;
+        }
+
+        .card-btn {
+            display: block;
+            text-align: center;
+            background-color: var(--bg-input);
+            border: 1px solid var(--border-color);
+            color: #60a5fa;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .card-btn:hover {
+            background-color: var(--primary-blue);
+            color: #ffffff;
+            border-color: var(--primary-blue);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">Global<span>Showcase</span></div>
+            <div class="badge">100% Free Backlinks</div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Promote Your Projects to the World</h1>
+            <p>Publish your web apps, mobile applications, and tools for free. Grow your audience and get noticed by real users.</p>
+        </section>
+
+        <div class="main-layout">
+            <!-- Submission Form Area -->
+            <aside class="form-card">
+                <h2>Submit Project</h2>
+                <form id="submissionForm">
+                    <div class="form-group">
+                        <label for="title">Project Name</label>
+                        <input type="text" id="title" placeholder="e.g. CodeMaster AI" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category" required>
+                            <option value="Web App">Web Application</option>
+                            <option value="Mobile App">Mobile App</option>
+                            <option value="Tool/Utility">Tool / Utility</option>
+                            <option value="Game">Game</option>
+                            <option value="Portfolio">Portfolio</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="image">Banner Image URL</label>
+                        <input type="url" id="image" placeholder="https://site.com/banner.jpg" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="link">Website / App Link</label>
+                        <input type="url" id="link" placeholder="https://yourwebsite.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" rows="3" placeholder="Explain what your project does..." required></textarea>
+                    </div>
+
+                    <button type="submit">Publish Now</button>
+                </form>
+            </aside>
+
+            <!-- Community Listings Area -->
+            <section class="showcase-area">
+                <div class="showcase-header">
+                    <h2>Recent Showcase</h2>
+                </div>
+
+                <div class="grid-container" id="projectGrid">
+                    <!-- Sample Demo Card 1 -->
+                    <article class="card">
+                        <div class="card-img-wrapper">
+                            <span class="card-category">Web App</span>
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500" alt="CodeMaster Dashboard Preview">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">CodeMaster Pro</h3>
+                            <p class="card-desc">An all-in-one developer workspace dashboard for tracking repositories and API status.</p>
+                            <a href="#" target="_blank" rel="nofollow noopener" class="card-btn">Visit Website</a>
+                        </div>
+                    </article>
+
+                    <!-- Sample Demo Card 2 -->
+                    <article class="card">
+                        <div class="card-img-wrapper">
+                            <span class="card-category">Mobile App</span>
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500" alt="TrackIt Utility Preview">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">TrackIt Easy</h3>
+                            <p class="card-desc">Lightweight budget management application built for high performance and fast offline tracking.</p>
+                            <a href="#" target="_blank" rel="nofollow noopener" class="card-btn">Visit App Store</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        const form = document.getElementById('submissionForm');
+        const grid = document.getElementById('projectGrid');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const title = document.getElementById('title').value;
+            const category = document.getElementById('category').value;
+            const image = document.getElementById('image').value;
+            const link = document.getElementById('link').value;
+            const description = document.getElementById('description').value;
+
+            const cardHTML = `
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <span class="card-category">${escapeHTML(category)}</span>
+                        <img src="${escapeHTML(image)}" alt="${escapeHTML(title)} Preview" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500'">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">${escapeHTML(title)}</h3>
+                        <p class="card-desc">${escapeHTML(description)}</p>
+                        <a href="${escapeHTML(link)}" target="_blank" rel="nofollow noopener" class="card-btn">Visit Project</a>
+                    </div>
+                </article>
+            `;
+
+            grid.insertAdjacentHTML('afterbegin', cardHTML);
+            form.reset();
+            alert('Your project has been successfully listed!');
+        });
+
+        function escapeHTML(str) {
+            return str.replace(/[&<>'"]/g, 
+                tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
+            );
+        }
+    </script>
+
+</body>
+            </html>
+        
